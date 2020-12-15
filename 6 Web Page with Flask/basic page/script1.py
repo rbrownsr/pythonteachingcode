@@ -16,5 +16,9 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/rodney')
+def rodney():
+    return render_template("brown.html")
+
 if __name__=="__main__":
     app.run(debug=True)
